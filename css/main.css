@@ -1,0 +1,125 @@
+body {
+    background-image: url('../img/Backyard.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Ranchers;
+}
+h1{
+    color: rgba(255, 0, 0, 0.822);
+    text-decoration: underline;
+}
+
+h2{
+    color: rgba(255, 153, 0, 0.938);
+    
+}
+.title,
+.subtitle {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.player {
+    box-shadow: 0 2px 5px 0 #000;
+    transition: all 400ms;
+    left: 10px;
+}
+
+.player,
+.tile {
+    width: 70px;
+    height: 70px;
+}
+
+.player1 {
+    position: absolute;
+    background-image: url('../img/tom.jpg');
+    background-size: cover;
+    top: 160px;
+}
+
+.player1.alter-ego {
+    background-image: url('../img/bulldog.JPG');
+}
+
+.player1::before {
+    position: relative;
+    content: 'P 1';
+    top: -15px;
+    left: 25%;
+    color: black;
+}
+
+.player2 {
+    position: absolute;
+    top: 250px;
+    background-image: url('../img/jerry.png');
+    background-size: cover;
+}
+
+.player2.alter-ego {
+    background-image: url('../img/bulldog.JPG');
+}
+
+.player2::before {
+    position: relative;
+    content: 'P 2';
+    top: -15px;
+    left: 25%;
+    color: black;
+}
+
+.die-container {
+    max-width: 280px;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.die {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+}
+
+.die-container h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-70%);
+    margin: 0;
+    cursor: pointer;
+}
+
+.board-container {
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tile {
+    box-sizing: border-box;
+    display: block;
+    background-image: url('../img/jerrycheese.jpg');
+    background-size: cover;
+    border: 5px solid orange;
+    content: '';
+    margin: 15px;
+}
+#winner-circle{
+background-image: url('../img/spikehouse.png');
+border: transparent;  
+}
+
+.winner {
+    border-radius: 100%;
+    width: 200px;
+    height: 180px;
+}
